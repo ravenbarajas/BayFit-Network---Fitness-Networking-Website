@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --background: 240 10% 3.9%; /* #1C1C1E */
+  --foreground: 0 0% 97%; /* #F8F8F8 */
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 97%;
+  --card: 240 5% 11%; /* #2C2C2E */
+  --card-foreground: 0 0% 97%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 174 100% 47%; /* #00F0B9 */
+  --primary-foreground: 240 10% 3.9%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 97%;
+  --accent: 207 90% 61%; /* #3E8FFF */
+  --accent-foreground: 240 10% 3.9%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 97%;
+  --ring: 174 100% 47%;
+  --radius: 0.75rem;
+  
+  /* Custom BayFit colors */
+  --electric-teal: 174 100% 47%; /* #00F0B9 */
+  --warm-white: 0 0% 97%; /* #F8F8F8 */
+  --dark-gray: 240 10% 3.9%; /* #1C1C1E */
+  --neon-blue: 207 90% 61%; /* #3E8FFF */
+  --gray-800: 240 5% 11%; /* #2C2C2E */
+  --gray-700: 240 4% 16%; /* #3A3A3C */
+  --gray-600: 240 3% 23%; /* #48484A */
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 97%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 97%;
+  --card: 240 5% 11%;
+  --card-foreground: 0 0% 97%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 174 100% 47%;
+  --primary-foreground: 240 10% 3.9%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 97%;
+  --accent: 207 90% 61%;
+  --accent-foreground: 240 10% 3.9%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 97%;
+  --ring: 174 100% 47%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .text-electric-teal {
+    color: hsl(var(--electric-teal));
+  }
+  
+  .bg-electric-teal {
+    background-color: hsl(var(--electric-teal));
+  }
+  
+  .text-warm-white {
+    color: hsl(var(--warm-white));
+  }
+  
+  .bg-warm-white {
+    background-color: hsl(var(--warm-white));
+  }
+  
+  .text-dark-gray {
+    color: hsl(var(--dark-gray));
+  }
+  
+  .bg-dark-gray {
+    background-color: hsl(var(--dark-gray));
+  }
+  
+  .text-neon-blue {
+    color: hsl(var(--neon-blue));
+  }
+  
+  .bg-neon-blue {
+    background-color: hsl(var(--neon-blue));
+  }
+  
+  .bg-gray-800 {
+    background-color: hsl(var(--gray-800));
+  }
+  
+  .bg-gray-700 {
+    background-color: hsl(var(--gray-700));
+  }
+  
+  .bg-gray-600 {
+    background-color: hsl(var(--gray-600));
+  }
+  
+  .border-gray-700 {
+    border-color: hsl(var(--gray-700));
+  }
+  
+  .border-gray-800 {
+    border-color: hsl(var(--gray-800));
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+}

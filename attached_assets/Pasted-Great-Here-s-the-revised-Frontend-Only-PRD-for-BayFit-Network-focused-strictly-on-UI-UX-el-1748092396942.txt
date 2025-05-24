@@ -1,0 +1,231 @@
+Great! Here's the revised **Frontend-Only PRD** for **BayFit Network**, focused strictly on UI/UX elements and frontend implementation. All backend, AI/ML, and integration points are deferred or stubbed for future development. This version assumes **no backend logic**—purely static or frontend-interactive (with mock data or placeholders).
+
+---
+
+# **Frontend-Only PRD: BayFit Network**
+
+## **1. Overview**
+
+**Project Name:** BayFit Network
+**Type:** Frontend-Only MVP
+**Scope:** Responsive, modern fitness platform UI to support user sign-up, browsing of plans, dashboard interface, and preview of smart/AI features.
+
+---
+
+## **2. Goals (Frontend Only)**
+
+* Design and build a fully responsive UI for a fitness subscription platform
+* Provide users with clear paths to explore plans, join, and manage workouts (mocked)
+* Visually tease AI/ML-powered features
+* Include a non-functional chatbot interface
+* Enable smooth navigation and seamless transitions between pages
+
+---
+
+## **3. Pages & Components**
+
+### **A. Homepage**
+
+**Components:**
+
+* Navigation Bar
+
+  * Logo (left)
+  * Menu Items (Home, How It Works, Plans, Virtual Classes, Blog, Join/Login)
+* Hero Section
+
+  * Fullscreen banner/video background
+  * Tagline + 2 CTA buttons
+* Feature Preview Grid
+
+  * Icons + Titles for: Smart Coach, Virtual Classes, Wearable Sync, Nutrition Assistant
+* Membership Tier Preview
+
+  * 3 Card Layouts (Core / Pro / Elite) with “See Plans” buttons
+* Coming Soon Banner
+
+  * Horizontal scroll or grid of AI/ML features with animated “Coming Soon” badges
+* Testimonials Carousel
+
+  * Static review cards (with avatar, name, quote)
+* Footer
+
+  * Links: About, Contact, Terms, Social Icons
+
+---
+
+### **B. Plans Page**
+
+**Components:**
+
+* Hero Banner
+
+  * Title + quick pricing overview
+* Toggle Switch (Monthly ↔ Yearly)
+* Pricing Cards (3 tiers)
+
+  * Features list with icons
+  * Highlighted differences (e.g., AI Smart Coach only in Elite)
+  * CTA: “Join Now” (goes to signup form)
+* Plan Comparison Table (static data)
+
+---
+
+### **C. How It Works Page**
+
+**Components:**
+
+* Scrollable Timeline (4 steps)
+
+  * Sign up → Choose Plan → Train Anywhere → Track Progress
+* Animated Illustrations or Icons
+* CTA Button at end: “See Plans”
+
+---
+
+### **D. Virtual Classes Page**
+
+**Components:**
+
+* Grid/List of Class Cards
+
+  * Thumbnail, class name, time, instructor
+  * Filter tabs: Live / On-Demand (non-functional)
+* Callout Banner: “More Virtual Features Coming Soon!”
+
+---
+
+### **E. Join / Signup Page**
+
+**Components:**
+
+* Form (Frontend only, no validation or API calls):
+
+  * Name, Email, Password, Plan Dropdown
+  * Terms checkbox
+  * CTA: “Create Account”
+* Optional: Use localStorage to mock user state across sessions
+
+---
+
+### **F. Login Page**
+
+**Components:**
+
+* Basic login form: Email + Password + CTA
+* Forgot Password link (non-functional)
+* Login with Google/Apple (styled only, not functional)
+* On login: simulate redirect to Dashboard with mock user data
+
+---
+
+### **G. User Dashboard**
+
+**Mocked Experience (No Auth Required, Just Routed)**
+**Sections:**
+
+* Welcome Header: “Welcome back, \[User]”
+* Dashboard Widgets:
+
+  * Calendar (mock calendar UI component)
+  * Progress Overview (placeholder chart with mock stats)
+  * "My Plan" card with dummy plan data
+  * Placeholder for Smart Coach Panel:
+
+    > “Smart Coach launching soon. Stay tuned!”
+* Logout Button (resets mock login state)
+
+---
+
+### **H. Chatbot Placeholder (Global)**
+
+**Persistent Floating Button**
+
+* Chat icon bottom-right
+* On click:
+
+  * Modal slides out
+  * Static message:
+
+    > “Hi there! I’m BayBot — your AI coach. Coming soon to help with workouts, plans, and nutrition.”
+  * Optional: fake chat bubbles for UX flavor
+* Close button
+
+---
+
+## **4. Component Design (Atomic/Flexible)**
+
+**Atoms:**
+
+* Buttons, Icons, Typography, Inputs
+  **Molecules:**
+* Plan Card, Testimonial Card, Class Tile
+  **Organisms:**
+* Navigation Bar, Dashboard Widgets, Footer
+  **Templates:**
+* Page Layouts for Home, Plans, Dashboard
+  **Pages:**
+* Static routing (React Router, Next.js Pages, etc.)
+
+---
+
+## **5. Style Guide**
+
+* **Color Palette:**
+
+  * Primary: Electric Teal `#00F0B9`
+  * Accent: Warm White `#F8F8F8`
+  * Background: Dark Gray `#1C1C1E`
+  * Highlight: Neon Blue `#3E8FFF`
+
+* **Fonts:**
+
+  * Headers: *Poppins*, Bold
+  * Body: *Inter*, Regular
+
+* **Animations:**
+
+  * Smooth page transitions (Framer Motion recommended)
+  * Hover animations on cards and CTAs
+  * Pulsing “Coming Soon” badges
+
+* **Responsive Design:**
+
+  * Flex/grid layout with breakpoints: Mobile, Tablet, Desktop
+  * Touch-friendly elements, readable font sizes
+
+---
+
+## **6. Tooling & Frameworks**
+
+* **Framework:** React.js (or Next.js for SSR-ready setup)
+* **CSS:** Tailwind CSS or styled-components
+* **Routing:** React Router / Next.js Pages
+* **Charting (mocked):** Chart.js or Recharts
+* **Component State:** Local state + localStorage (mock auth)
+* **No backend / no real APIs**
+
+---
+
+## **7. Optional Enhancements**
+
+* Dark mode toggle
+* Language toggle (EN/ES placeholder)
+* Static blog/article cards (from local JSON)
+* Downloadable plan PDF button (links to static file)
+
+---
+
+## **8. Timeline & Frontend Milestones**
+
+| Week | Deliverables                          |
+| ---- | ------------------------------------- |
+| 1    | Page wireframes + navigation system   |
+| 2    | Homepage, Plans, and How It Works     |
+| 3    | Dashboard mock, Signup/Login, Chatbot |
+| 4    | Styling pass, responsive tuning       |
+| 5    | Final UX polish + static deploy       |
+
+---
+
+Would you like this exported as a Notion doc, Markdown file, or a React component starter project?
